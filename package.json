@@ -1,6 +1,6 @@
 {
   "name": "next-product-docs-example",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
     "Moritz Sattler (https://github.com/MoSattler)"
   ],
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -54,16 +55,5 @@
     "prettier": "^2.3.0",
     "sass": "^1.34.0",
     "tailwindcss": "^2.1.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
-  },
-  "engines": {
-    "npm": ">7.5.x"
   }
 }
