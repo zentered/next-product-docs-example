@@ -51,12 +51,12 @@ export default function Homepage() {
         </dl>
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-x-10">
-            <Link href="https://zentered.co/articles/product-documentation-with-nextjs/">
+            <Link href="http://opstrace.com/blog/product-documentation-with-nextjs">
               <a className="border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 py-4 px-10">
                 Blog Article
               </a>
             </Link>
-            <Link href="https://zentered.co/articles/product-documentation-with-nextjs/">
+            <Link href="https://github.com/opstrace/next-product-docs">
               <a className="border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 py-4 px-10">
                 Component Repo
               </a>
