@@ -1,0 +1,21 @@
+name: Sync Algolia
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "docs/**"
+
+jobs:
+  algolia:
+    runs-on: ubuntu-latest
+    name: Algolia Sync
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: opstrace/algolia-docs-sync@v1.0.2
+        with:
+          algoliaId: "VKVWGFTW45"
+          algoliaKey: ${{ secrets.ALGOLIA_KEY }}
+          algoliaIndex: "remote-docs-dev"
