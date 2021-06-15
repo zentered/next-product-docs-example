@@ -35,11 +35,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.1",
-    "@zentered/opstrace-docs-component": "^1.0.53",
     "next": "10.2.2",
     "next-mdx-remote": "^3.0.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-scroll": "^1.8.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -47,7 +47,10 @@
     "autoprefixer": "^10.2.5",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-markdown": "^2.1.0",
+    "eslint-plugin-mdx": "^1.13.0",
+    "eslint-plugin-react": "^7.24.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^11.0.0",
