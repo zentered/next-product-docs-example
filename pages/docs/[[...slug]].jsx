@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import {
-  pageProps,
-  staticPaths
-} from '@zentered/opstrace-docs-component/serialize'
-import Documentation from '@zentered/opstrace-docs-component'
+import { pageProps, staticPaths } from '@opstrace/next-product-docs/serialize'
+import Documentation from '@opstrace/next-product-docs'
 
 import Sidebar from 'components/Sidebar'
 import Toc from 'components/Toc'
