@@ -7,7 +7,7 @@
 This is an example repo for the Next.js Product Documentation component.
 
 - [Read the full article about the component](http://opstrace.com/blog/product-documentation-with-nextjs)
-- [Check out the component repo with complete installation and usage instructions](https://github.com/zentered/next-product-docs)
+- [Check out the component repo with complete installation and usage instructions](https://github.com/opstrace/next-product-docs)
 
 ## Installation
 
