@@ -7,8 +7,7 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true,
-    "cypress/globals": true
+    "node": true
   },
   "extends": [
     "eslint:recommended",
@@ -23,7 +22,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "cypress"],
+  "plugins": ["react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
