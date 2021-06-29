@@ -33,10 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# cypress
-cypress/videos
-cypress/screenshots
-
 # eslint
 .eslintcache
 
