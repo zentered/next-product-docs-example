@@ -4,7 +4,7 @@ import Link from 'next/link'
 function ListItems({ routes }) {
   if (routes) {
     return routes.map((r) => {
-      if (r.heading) {
+      if (!r.path) {
         return (
           <li key={r.title}>
             <h4 className="text-gray-500 uppercase font-bold">{r.title}</h4>
