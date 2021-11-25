@@ -5,7 +5,7 @@ import Documentation from '@opstrace/next-product-docs'
 import Sidebar from 'components/Sidebar'
 import Toc from 'components/Toc'
 
-import theme from 'utils/vsDark'
+import theme from 'lib/vsDark'
 
 export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
   if (source === null) {
