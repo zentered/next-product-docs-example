@@ -19,7 +19,7 @@
     "unlink-docs-component": "cd ../next-product-docs && npm unlink && cd ./node_modules/react && npm unlink && cd ../react-dom && npm unlink",
     "create-links": "cd ../next-product-docs && npm link && cd ./node_modules/react && npm link && cd ../react-dom && npm link && cd ../../../next-product-docs-example",
     "link-component-to-folder": "npm link react && npm link react-dom && npm link @opstrace/next-product-docs",
-    "link-docs-component": "npm run create-links && npm run link-component-to-folder"
+    "link-docs-component": "npm run create-links && npm run link-component-to-folder --force"
   },
   "commitlint": {
     "extends": [
@@ -27,9 +27,6 @@
     ]
   },
   "lint-staged": {
-    "*.{jsx}": [
-      "stylelint"
-    ],
     "*.{js,json,jsx,md,mdx}": [
       "prettier --write"
     ],
@@ -38,29 +35,28 @@
     ]
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.1",
-    "@opstrace/next-product-docs": "^1.1.0",
-    "next": "11.1.1",
-    "next-mdx-remote": "^3.0.2",
+    "@opstrace/next-product-docs": "^1.2.0",
+    "esbuild": "^0.12.15",
+    "next": "11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scroll": "^1.8.2"
+    "react-scroll": "^1.8.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "autoprefixer": "^10.2.6",
-    "eslint": "^7.29.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-markdown": "^2.2.0",
-    "eslint-plugin-mdx": "^1.13.0",
+    "eslint-plugin-mdx": "^1.14.1",
     "eslint-plugin-react": "^7.24.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "lint-staged": "^11.0.0",
-    "postcss": "^8.3.5",
+    "lint-staged": "^11.1.1",
+    "postcss": "^8.3.6",
     "prettier": "^2.3.2",
-    "sass": "^1.35.1",
-    "tailwindcss": "^2.2.4"
+    "sass": "^1.36.0",
+    "tailwindcss": "^2.2.7"
   }
 }

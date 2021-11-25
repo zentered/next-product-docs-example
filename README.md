@@ -22,7 +22,7 @@ variables in `.env`. If your repository is private, you'll need to provide a
 [Personal Access Token](https://github.com/settings/tokens) with the correct
 permissions as `GITHUB_TOKEN`.
 
-# Run Locally
+## Local Development
 
 ```bash
     npm run dev
@@ -33,7 +33,7 @@ permissions as `GITHUB_TOKEN`.
     # or yarn unlink-docs-component (unlink next-docs-component)
 ```
 
-# How to link next-product-docs component
+## How to link next-product-docs component
 
 1. Clone this repo
 2. Clone [next-product-docs](https://github.com/zentered/next-product-docs) on
