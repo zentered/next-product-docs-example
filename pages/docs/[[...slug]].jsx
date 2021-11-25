@@ -5,7 +5,12 @@ import Documentation from '@opstrace/next-product-docs'
 import Sidebar from 'components/Sidebar'
 import Toc from 'components/Toc'
 
+import theme from 'utils/vsDark.js'
+
 export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
+  if (source === null) {
+    source = ''
+  }
   return (
     <>
       <Head>
@@ -17,7 +22,7 @@ export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
         <div className="md:flex max-w-7xl mx-auto">
           <Sidebar routes={sidebarRoutes} />
           <main className="md:flex-1 ml-4 xl:ml-8 pr-4 sm:pr-0">
-            <Documentation source={source} />
+            <Documentation source={source} theme={theme} />
           </main>
           <Toc contents={tocHeadings} />
         </div>
