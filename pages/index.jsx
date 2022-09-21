@@ -51,7 +51,7 @@ export default function Homepage() {
                 Blog Article
               </a>
             </Link>
-            <Link href="https://github.com/opstrace/next-product-docs">
+            <Link href="https://github.com/zentered/next-product-docs">
               <a className="border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 py-4 px-10">
                 Component Repo
               </a>
