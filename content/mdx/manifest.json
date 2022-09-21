@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "heading": true,
+      "title": "Next Product Documentation",
+      "routes": [
+        {
+          "title": "Introduction",
+          "path": "/README.md"
+        }
+      ]
+    },
+    {
+      "heading": true,
+      "title": "Cool Features",
+      "routes": [
+        {
+          "title": "Feature Overview",
+          "path": "/features/README.md"
+        },
+        {
+          "title": "Feature 1",
+          "path": "/features/cool-feature-1.md"
+        },
+        {
+          "title": "Feature 2",
+          "path": "/features/cool-feature-2.md"
+        }
+      ]
+    }
+  ]
+}
