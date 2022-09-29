@@ -1,6 +1,6 @@
 {
   "name": "next-product-docs-example",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -11,15 +11,12 @@
     "Patrick Heneise (https://github.com/PatrickHeneise)",
     "Moritz Sattler (https://github.com/MoSattler)"
   ],
+  "type": "module",
   "scripts": {
-    "prepare": "husky install",
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "unlink-docs-component": "cd ../next-product-docs && npm unlink && cd ./node_modules/react && npm unlink && cd ../react-dom && npm unlink",
-    "create-links": "cd ../next-product-docs && npm link && cd ./node_modules/react && npm link && cd ../react-dom && npm link && cd ../../../next-product-docs-example",
-    "link-component-to-folder": "npm link react && npm link react-dom && npm link @opstrace/next-product-docs",
-    "link-docs-component": "npm run create-links && npm run link-component-to-folder --force"
+    "dev": "next dev",
+    "prepare": "husky install",
+    "start": "next start"
   },
   "commitlint": {
     "extends": [
@@ -35,28 +32,27 @@
     ]
   },
   "dependencies": {
-    "@opstrace/next-product-docs": "^1.3.5",
-    "esbuild": "^0.12.29",
-    "next": "12.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scroll": "^1.8.4"
+    "@unocss/webpack": "^0.45.26",
+    "@zentered/next-product-docs": "^2.0.0",
+    "esbuild": "^0.15.9",
+    "next": "12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.7"
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
-    "autoprefixer": "^10.4.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-markdown": "^2.2.1",
-    "eslint-plugin-mdx": "^1.16.0",
-    "eslint-plugin-react": "^7.27.1",
-    "husky": "^7.0.4",
-    "jest": "^27.3.1",
-    "lint-staged": "^12.1.2",
-    "postcss": "^8.4.1",
-    "prettier": "^2.4.1",
-    "sass": "^1.43.5",
-    "tailwindcss": "^2.2.19"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-mdx": "^2.0.5",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": "^16||^18"
   }
 }

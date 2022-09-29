@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/example-screenshot.png">
+  <img src=".github/assets/opstrace-docs.png">
 </p>
 
 # Next.js Product Docs Minimal Example
@@ -7,7 +7,7 @@
 This is an example repo for the Next.js Product Documentation component.
 
 - [Read the full article about the component](http://opstrace.com/blog/product-documentation-with-nextjs)
-- [Check out the component repo with complete installation and usage instructions](https://github.com/opstrace/next-product-docs)
+- [Check out the component repo with complete installation and usage instructions](https://github.com/zentered/next-product-docs)
 
 ## Installation
 
@@ -24,22 +24,20 @@ permissions as `GITHUB_TOKEN`.
 
 ## Local Development
 
+1. Clone [next-product-docs](https://github.com/zentered/next-product-docs) to
+   ./next-product-docs
+2. Create a project folder in the same level as next-product-docs
+
 ```bash
-    npm run dev
-    # or yarn dev
-    npm run link-docs-component
-    # or yarn link-docs-component (link next-docs-component)
-    npm run unlink-docs-component
-    # or yarn unlink-docs-component (unlink next-docs-component)
+  cd next-product-docs
+  pnpm i
+  pnpm build
+  pnpm link .
+
+  cd ../your-project-folder
+  pnpm install @zentered/next-product-docs
+  pnpm link @zentered/next-product-docs ../next-product-docs
 ```
 
-## How to link next-product-docs component
-
-1. Clone this repo
-2. Clone [next-product-docs](https://github.com/zentered/next-product-docs) on
-   the same folder level
-3. Install dependincies in both folders
-4. Move to `next-product-docs` folder and run `npm run build` or `npm run watch`
-5. Move to `next-product-docs-example` folder and run
-   `npm run link-docs-component`
-6. Run `npm run dev` and check result on `http://localhost:3000`
+You can continuously build & watch the component by running `pnpm watch` in the
+`next-product-docs` folder.

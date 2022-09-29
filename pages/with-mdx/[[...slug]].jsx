@@ -1,16 +1,20 @@
 import Head from 'next/head'
-import { pageProps, staticPaths } from '@opstrace/next-product-docs/serialize'
-import Documentation from '@opstrace/next-product-docs'
+import { pageProps, staticPaths } from '@zentered/next-product-docs/serialize'
+import { Documentation } from '@zentered/next-product-docs'
 
-import Sidebar from 'components/Sidebar'
-import Toc from 'components/Toc'
+import Sidebar from '../../components/Sidebar'
+import Toc from '../../components/Toc'
+import theme from '../../utils/vsDark.js'
 
-import theme from 'utils/vsDark.js'
+const docOptions = {
+  docsFolder: 'docs',
+  useMDX: true,
+  trailingSlash: true
+}
 
 export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
-  if (source === null) {
-    source = ''
-  }
+  if (source === null) return
+
   return (
     <>
       <Head>
@@ -32,14 +36,13 @@ export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
 }
 
 export async function getStaticPaths() {
-  const paths = await staticPaths()
+  console.log('load paths')
+  const paths = await staticPaths(docOptions)
   return { paths, fallback: false }
 }
 
 export async function getStaticProps(ctx) {
-  return {
-    props: {
-      ...(await pageProps(ctx))
-    }
-  }
+  console.log('load page')
+  const props = await pageProps(ctx, docOptions)
+  return { props }
 }

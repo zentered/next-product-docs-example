@@ -1,0 +1,56 @@
+---
+description: You can use frontmatter just you're used to in Markdown
+---
+
+# Next Product Docs Example
+
+This is the top-level readme file.
+
+## Code Box
+
+```bash
+mkdir folder && cd folder
+```
+
+## Tabs
+
+<!--tabs-->
+
+### MacOS
+
+```bash
+# Download the CLI  and extract it
+curl -L https://coolstuff | tar xjf -
+
+# Test the extracted binary
+./coolstuff --help
+```
+
+### Linux
+
+```bash
+# Download the CLI and extract it
+curl -L https://coolstuff | tar xjf -
+
+# Test the extracted binary
+./coolstuff --help
+```
+
+<!-- /tabs -->
+
+### Code Substitution
+
+<!--export-to-input-->
+
+```bash
+export ENV_NAME=<choose_a_name>
+```
+
+<!--/export-to-input-->
+
+Check this out, you can replace content in the code box and have Copy & Paste
+available for your Terminal:
+
+```bash
+./coolstuff create $ENV_NAME
+```
