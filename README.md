@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/example-screenshot.png">
+  <img src=".github/assets/opstrace-docs.png">
 </p>
 
 # Next.js Product Docs Minimal Example
