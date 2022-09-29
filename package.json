@@ -32,9 +32,9 @@
     ]
   },
   "dependencies": {
-    "@unocss/webpack": "^0.45.22",
-    "@zentered/next-product-docs": "^2.0.0-dev.2",
-    "esbuild": "^0.15.8",
+    "@unocss/webpack": "^0.45.26",
+    "@zentered/next-product-docs": "^2.0.0",
+    "esbuild": "^0.15.9",
     "next": "12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-mdx": "^2.0.5",
