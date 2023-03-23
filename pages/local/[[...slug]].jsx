@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { withRouter } from 'next/router'
 import { pageProps, staticPaths } from '@zentered/next-product-docs/serialize'
 import { Documentation } from '@zentered/next-product-docs'
 
@@ -11,9 +12,11 @@ const docOptions = {
   trailingSlash: true
 }
 
-export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {
-  if (source === null) return
-
+function DocumentationPage({ title, source, sidebarRoutes, tocHeadings }) {
+  if (source === null) {
+    source = ''
+  }
+  
   return (
     <>
       <Head>
@@ -45,3 +48,4 @@ export async function getStaticProps(ctx) {
   const props = await pageProps(ctx, docOptions)
   return { props }
 }
+export default withRouter(DocumentationPage)

@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@unocss/webpack": "^0.45.26",
-    "@zentered/next-product-docs": "^2.0.0",
+    "@zentered/next-product-docs": "^2.0.6",
     "esbuild": "^0.15.9",
     "next": "12.3.1",
     "react": "^18.2.0",

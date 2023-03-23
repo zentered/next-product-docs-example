@@ -6,15 +6,15 @@
 
 This is an example repo for the Next.js Product Documentation component.
 
-- [Read the full article about the component](http://opstrace.com/blog/product-documentation-with-nextjs)
+- [Read the full article about the component](https://zentered.co/articles/product-documentation-with-nextjs)
 - [Check out the component repo with complete installation and usage instructions](https://github.com/zentered/next-product-docs)
 
 ## Installation
 
 ```bash
     npm install
+    # or pnpm install
     # or yarn install
-    cp env.example .env
 ```
 
 The remote repository for the docs can be configured through environment
