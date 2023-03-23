@@ -16,10 +16,12 @@ function ListItems({ routes }) {
       } else {
         return (
           <li key={r.title}>
-            <Link key={r.path} href={r.path}>
-              <a className="flex py-2 pl-2 text-sm font-medium text-gray-600 transition ease-in-out duration-150">
-                {r.title}
-              </a>
+            <Link
+              key={r.path}
+              href={r.path}
+              className="flex py-2 pl-2 text-sm font-medium text-gray-600 transition ease-in-out duration-150"
+            >
+              {r.title}
             </Link>
           </li>
         )

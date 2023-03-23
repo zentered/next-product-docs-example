@@ -46,20 +46,23 @@ export default function Homepage() {
         </dl>
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-x-10">
-            <Link href="https://zentered.co/articles/product-documentation-with-nextjs">
-              <a className="border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 py-4 px-10">
-                Blog Article
-              </a>
+            <Link
+              href="https://zentered.co/articles/product-documentation-with-nextjs"
+              className="border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 py-4 px-10"
+            >
+              Blog Article
             </Link>
-            <Link href="https://github.com/zentered/next-product-docs">
-              <a className="border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 py-4 px-10">
-                Component Repo
-              </a>
+            <Link
+              href="https://github.com/zentered/next-product-docs"
+              className="border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-green-700 py-4 px-10"
+            >
+              Component Repo
             </Link>
-            <Link href="/docs">
-              <a className="border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 py-4 px-10">
-                Docs Demo
-              </a>
+            <Link
+              href="/with-mdx"
+              className="border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 py-4 px-10"
+            >
+              Docs Demo
             </Link>
           </div>
         </div>

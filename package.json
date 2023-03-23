@@ -32,25 +32,28 @@
     ]
   },
   "dependencies": {
-    "@unocss/webpack": "^0.45.26",
     "@zentered/next-product-docs": "^2.0.6",
-    "esbuild": "^0.15.9",
-    "next": "12.3.1",
+    "esbuild": "^0.17.12",
+    "next": "13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scroll": "^1.8.7"
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@unocss/preset-attributify": "^0.50.6",
+    "@unocss/reset": "^0.50.6",
+    "@unocss/webpack": "^0.50.6",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-mdx": "^2.0.5",
-    "eslint-plugin-react": "^7.31.8",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.6",
+    "unocss": "^0.50.6"
   },
   "engines": {
     "node": "^16||^18"

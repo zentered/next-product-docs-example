@@ -7,9 +7,10 @@ import Toc from '../../components/Toc'
 import theme from '../../utils/vsDark.js'
 
 const docOptions = {
-  docsFolder: 'docs',
+  docsFolder: 'mdx',
   useMDX: true,
-  trailingSlash: true
+  trailingSlash: true,
+  debug: true
 }
 
 export default function Docs({ title, source, sidebarRoutes, tocHeadings }) {

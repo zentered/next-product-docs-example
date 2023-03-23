@@ -6,7 +6,7 @@
       "routes": [
         {
           "title": "Introduction",
-          "path": "/README.mdx"
+          "path": "/README.md"
         }
       ]
     },
@@ -16,15 +16,15 @@
       "routes": [
         {
           "title": "Feature Overview",
-          "path": "/features/README.mdx"
+          "path": "/features/README.md"
         },
         {
           "title": "Feature 1",
-          "path": "/features/cool-feature-1.mdx"
+          "path": "/features/cool-feature-1.md"
         },
         {
           "title": "Feature 2",
-          "path": "/features/cool-feature-2.mdx"
+          "path": "/features/cool-feature-2.md"
         }
       ]
     }
